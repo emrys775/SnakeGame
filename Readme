@@ -1,0 +1,45 @@
+   python main.py
+   
+# Snake Game
+This is a classic Snake Game implemented using Python's `
+turtle` graphics module. The game involves controlling a snake that grows 
+in size each time it eats food. The player scores points as the snake eats more food, 
+but the game ends if the snake collides with itself or the wall. The game also keeps 
+track of the highest score.
+
+
+## Features
+1. **Game Screen**:
+    - Dimensions: 600x600 pixels
+    - Background Color: White
+
+2. **Snake**:
+    - Moves with the arrow keys: **Up, Down, Left, Right**
+    - Grows in length when it eats food
+
+3. **Food**:
+    - Randomly spawns on the screen
+    - Consumed by the snake for points
+
+4. **Scoreboard**:
+    - Displays the current score and highest score
+    - Persistent high-score storage in `data.txt`
+
+5. **Game Over Conditions**:
+    - When the snake collides with the wall
+    - When the snake collides with itself
+
+## File Structure
+- **`main.py`**: The main file where the game loop is managed. Initializes the screen, snake, food, and scoreboard.
+- **`snake.py`**: Contains the Snake class, handling the movement, growth, and collisions.
+- **`food.py`**: Contains the Food class for spawning food randomly on the screen.
+- **`scoreboard.py`**: Manages the scoring system, including the high score.
+- **`data.txt`**: Stores the high score, which is loaded and saved between games.
+
+## Requirements
+- Python 3.x
+- No external libraries are required (only uses Python's built-in `turtle` module).
+
+## How to Run
+1. Clone or download this repository.
+2. Run the `main.py` file:
